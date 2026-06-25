@@ -1,0 +1,17 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Offload complex layers directly to mobile GPUs */
+.layout-gpu {
+    will-change: transform, filter;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Smooth toggle height transition rule for mobile dropdown */
+.menu-open {
+    max-height: 320px !important;
+}
